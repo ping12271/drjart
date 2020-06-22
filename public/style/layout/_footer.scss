@@ -1,0 +1,17 @@
+#footer {
+  .container {
+
+  }
+  .footer-menu {
+    background-color: #fff;
+    display: flex;
+    a {
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 13px;
+      padding: 20px;
+    }
+  }
+}

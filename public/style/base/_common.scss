@@ -1,0 +1,31 @@
+html, body {height:100%;}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    word-break: keep-all;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 60px;
+
+}
+
+
+.pull-left{float:left;}
+.pull-right{float:right;}
+.por{position:relative;}
+.poa{position:absolute;}
+.pof{position:fixed;}
+.dtb{display:table;}
+.dtbc{display:table-cell;}
+.vat{vertical-align:top;}
+.vam{vertical-align:middle;}
+.vab{vertical-align:bottom;}
+.text-left{text-align:left;}
+.text-center{text-align:center;}
+.text-right{text-align:right;}
+.text-ellipsis{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+
+
