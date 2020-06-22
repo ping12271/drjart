@@ -401,6 +401,8 @@
       align-items: center;
       li {
         flex: 1 1 25%;
+        display: flex;
+        justify-content: center;
         .review-item {
           p.review-text {
             font-size: 12px;
@@ -439,11 +441,12 @@
           display: flex;
           justify-content: center;
           flex: 1 1 20%;
+          max-width: 20%;
           padding: 15px;
-          width: 200px;
-          height: 200px;
           .item {
             position: relative;
+            width: 250px;
+            height: 250px;
             overflow: hidden;
             img {
               width: 100%;

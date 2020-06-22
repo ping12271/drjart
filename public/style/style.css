@@ -1144,6 +1144,8 @@ body {
 }
 .product-page .product-review ul.review-items li {
   flex: 1 1 25%;
+  display: flex;
+  justify-content: center;
 }
 .product-page .product-review ul.review-items li .review-item p.review-text {
   font-size: 12px;
@@ -1177,12 +1179,13 @@ body {
   display: flex;
   justify-content: center;
   flex: 1 1 20%;
+  max-width: 20%;
   padding: 15px;
-  width: 200px;
-  height: 200px;
 }
 .product-page .product-sns .container .insta-item li .item {
   position: relative;
+  width: 250px;
+  height: 250px;
   overflow: hidden;
 }
 .product-page .product-sns .container .insta-item li .item img {
