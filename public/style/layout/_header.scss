@@ -1,209 +1,232 @@
-#wrap {
-  .header {
-    .main-header {
-      nav {
-        display: flex;
-        align-items: flex-end;
+.header {
+  .side-header {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 89px;
+    z-index: 100;
+    background-color: #fff;
+    border-right: 1px solid #d5d3d3;
 
-        h2 {
-          color: #000;
-          font-size: 32px;
-          padding-right: 20px;
-          padding-bottom: 20px;
+    .open-side-menu & {
+      border: none;
+    }
+
+    .header-btn {
+      position: relative;
+      height: 100%;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      .plus {
+        margin-top: 30px;
+        display: flex;
+        width: 28px;
+        height: 28px;
+        position: relative;
+
+        &:before, &:after {
+          content: '';
+          position: absolute;
+          background-color: black;
         }
 
-        ul.header-menu {
+        &:before {
+          left: 50%;
+          width: 30%;
+          margin-left: -15%;
+          height: 100%;
+        }
+
+        &:after {
+          top: 50%;
+          height: 30%;
+          margin-top: -15%;
+          width: 100%;
+        }
+      }
+
+      .all-menu {
+        font-size: 30px;
+
+        .fa-bars {
+          .open-side-menu & {
+            display: none;
+          }
+        }
+
+        .fa-times {
+          display: none;
+
+          .open-side-menu & {
+            display: block;
+          }
+        }
+      }
+
+      .icons {
+        margin-bottom: 30px;
+
+        a {
           display: flex;
-          justify-content: flex-start;
+          width: 29px;
+          height: 29px;
+          margin-top: 20px;
+        }
+      }
+    }
 
-          li {
-            a {
-              display: flex;
-              font-size: 14px;
-              color: #999;
-              padding: 20px 10px;
+    .side-nav {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -300px;
+      width: 233px;
+      padding: 30px 0 30px 20px;
+      background-color: #fff;
+      transition: .7s;
 
-              em {
-                color: #CC0066;
-              }
+      .open-side-menu & {
+        left: 89px;
+      }
 
-              &:hover {
-                color: #000;
+      h1 {
+        width: 130px;
+        height: 26px;
+      }
 
-                em {
-                  color: #CC0066;
-                }
-              }
+      .side-menu {
+        margin: 50px 0;
+
+        li {
+          a {
+            display: flex;
+            font-size: 22px;
+            color: #999;
+            padding-top: 20px;
+
+            &:hover {
+              color: #000;
+            }
+          }
+
+          &:last-child {
+            padding-top: 30px;
+            width: 140px;
+          }
+        }
+      }
+
+      .screen {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        display: none;
+        background-color: rgba(0, 0, 0, 0.6);
+
+        .open-side-menu & {
+          display: block;
+        }
+      }
+
+      .side-nav-util {
+        li {
+          a {
+            display: flex;
+            font-size: 13px;
+            color: #999;
+            padding-top: 15px;
+
+            &:hover {
+              color: #000;
+            }
+          }
+        }
+      }
+
+      .side-btn {
+        width: 140px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #eee;
+        border: 1px solid #999;
+        font-size: 13px;
+        margin: 30px 0;
+      }
+
+      .language {
+        a {
+          font-size: 12px;
+          color: #555;
+
+          &.active {
+            color: #000;
+          }
+
+          &.bar {
+            position: relative;
+            padding-right: 10px;
+            margin-right: 10px;
+
+            &:after {
+              content: '';
+              width: 1px;
+              height: 10px;
+              background-color: #666;
+              position: absolute;
+              top: 4px;
+              right: 0;
             }
           }
         }
       }
     }
+  }
+  .main-header {
+    nav {
+      display: flex;
+      align-items: flex-end;
 
-    .side-header {
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      width: 89px;
-      z-index: 100;
-      background-color: #fff;
-      border-right: 1px solid #d5d3d3;
-      .open-side-menu & {
-        border: none;
+      h2 {
+        color: #000;
+        font-size: 32px;
+        padding-right: 20px;
+        padding-bottom: 20px;
       }
-      .header-btn {
-        position: relative;
-        height: 100%;
-        background-color: #fff;
+
+      ul.header-menu {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        .plus {
-          margin-top: 30px;
-          display: flex;
-          width: 28px;
-          height: 28px;
-          position: relative;
-          &:before, &:after {
-            content: '';
-            position: absolute;
-            background-color: black;
-          }
-          &:before {
-            left: 50%;
-            width: 30%;
-            margin-left: -15%;
-            height: 100%;
-          }
-          &:after {
-            top: 50%;
-            height: 30%;
-            margin-top: -15%;
-            width: 100%;
-          }
-        }
-        .all-menu {
-          font-size: 30px;
-          .fa-bars {
-            .open-side-menu & {
-              display: none;
-            }
-          }
-          .fa-times {
-            display: none;
-            .open-side-menu & {
-              display: block;
-            }
-          }
-        }
-        .icons {
-          margin-bottom: 30px;
+        justify-content: flex-start;
+
+        li {
           a {
             display: flex;
-            width: 29px;
-            height: 29px;
-            margin-top: 20px;
-          }
-        }
-      }
+            font-size: 14px;
+            color: #999;
+            padding: 20px 10px;
 
-      .side-nav {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: -200px;
-        width: 233px;
-        padding: 30px 0 30px 20px;
-        background-color: #fff;
-        transition: .7s;
-        .open-side-menu & {
-          left: 89px;
-        }
-        h1 {
-          width: 130px;
-          height: 26px;
-        }
-        .side-menu {
-          margin: 50px 0;
-          li {
-            a {
-              display: flex;
-              font-size: 22px;
-              color: #999;
-              padding-top: 20px;
-              &:hover {
-                color: #000;
-              }
+            em {
+              color: #CC0066;
             }
-          &:last-child {
-            padding-top: 30px;
-            width: 140px;
-          }
-          }
-        }
-        .screen {
-          position: fixed;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          z-index: -1;
-          display: none;
-          background-color: rgba(0,0,0, 0.6);
-          .open-side-menu & {
-            display: block;
-          }
-        }
-        .side-nav-util {
-          li {
-            a {
-              display: flex;
-              font-size: 13px;
-              color: #999;
-              padding-top: 15px;
-              &:hover {
-                color: #000;
-              }
-            }
-          }
-        }
-        .side-btn {
-          width: 140px;
-          height: 30px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background-color: #eee;
-          border: 1px solid #999;
-          font-size: 13px;
-          margin: 30px 0;
-        }
-        .language {
-          a {
-            font-size: 12px;
-            color: #555;
-            &.active {
+
+            &:hover {
               color: #000;
-            }
-            &.bar {
-              position: relative;
-              padding-right: 10px;
-              margin-right: 10px;
-              &:after {
-                content: '';
-                width: 1px;
-                height: 10px;
-                background-color: #666;
-                position: absolute;
-                top: 4px;
-                right: 0;
+
+              em {
+                color: #CC0066;
               }
             }
           }
         }
       }
-
     }
   }
 }

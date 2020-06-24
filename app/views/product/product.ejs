@@ -4,17 +4,18 @@
     <%- include ../components/head %>
 </head>
 <body>
-<%- include('../components/header', {title: title, description: description}) %>
 <div id="wrap">
-    <div class="product-page">
+    <%- include('../components/header', {title: title, description: description}) %>
+    <div id="main" class="product-page">
         <section class="visual">
             <div class="item img1">
                 <div class="container">
                     <div class="visual-desc">
-                        <h2>자르트티비 EP.4<br>꿀궁합 자랑하는 썸머 메이크업템</h2>
+                        <h1>자르트티비 EP.4<br>꿀궁합 자랑하는 썸머 메이크업템</h1>
                         <p>메이크업아티스트가 '킴비'가 추천하는<br>환상의 꿀궁합 메이크업 구성을 특별한 가격에 만나보세요!</p>
-                        <div class="visual-btn">
+                        <div class="slide-btn">
                             <a href="#!">자세히보기</a>
+                            <div class="screen"></div>
                         </div>
                     </div>
                 </div>
@@ -22,10 +23,11 @@
             <div class="item img2">
                 <div class="container">
                     <div class="visual-desc">
-                        <h2>자르트티비 EP.4<br>꿀궁합 자랑하는 썸머 메이크업템</h2>
-                        <p>메이크업아티스트가 '킴비'가 추천하는<br>환상의 꿀궁합 메이크업 구성을 특별한 가격에 만나보세요!</p>
-                        <div class="visual-btn">
+                        <h1>유튜버 회사원A의 꾸준템!<br>바이옴 에센스+블루샷</h1>
+                        <p>회사원A 추천템 구매하고<br>공식몰 추가 혜택도 놓치지마세요!</p>
+                        <div class="slide-btn">
                             <a href="#!">자세히보기</a>
+                            <div class="screen"></div>
                         </div>
                     </div>
                 </div>
@@ -33,120 +35,211 @@
             <div class="item img3">
                 <div class="container">
                     <div class="visual-desc">
-                        <h2>자르트티비 EP.4<br>꿀궁합 자랑하는 썸머 메이크업템</h2>
-                        <p>메이크업아티스트가 '킴비'가 추천하는<br>환상의 꿀궁합 메이크업 구성을 특별한 가격에 만나보세요!</p>
-                        <div class="visual-btn">
+                        <h1>피부 고민별로 PICK!<br>233억에센스+바이옴 샷 출시</h1>
+                        <p>바이옴 에센스+바이옴 샷으로<br>내 피부고민에 맞는 피부레시피를 만들어보세요!</p>
+                        <div class="slide-btn">
                             <a href="#!">자세히보기</a>
+                            <div class="screen"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item img4">
+                <div class="container">
+                    <div class="visual-desc">
+                        <h1>수분 바이옴과 함께하는<br>감성가득 나만의 홈카페</h1>
+                        <p>바이탈하이드라솔루션과 함께 나만의 시원한 홈까페를 즐겨보세요!</p>
+                        <div class="slide-btn">
+                            <a href="#!">자세히보기</a>
+                            <div class="screen"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item img5">
+                <div class="container">
+                    <div class="visual-desc">
+                        <h1>디렉터파이가 선정한<br>Top of Top 선케어 제품</h1>
+                        <p>솔라바이옴 앰플 사용하고<br>겉바속초 피부를 느껴보세요!</p>
+                        <div class="slide-btn">
+                            <a href="#!">자세히보기</a>
+                            <div class="screen"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <section class="product-items best">
             <div class="container">
-                <h3>베스트셀러 TOP5</h3>
-                <ul class="product-item-list">
+                <h2>베스트셀러 TOP5</h2>
+                <ul>
                     <li>
-                        <div class="product-item">
-                            <img src="/public/images/1591944934738.webp" alt="">
-                            <p class="tag">#수분선앰플</p>
-                            <p class="list-tit">솔라바이옴™앰플 특별 기획세트</p>
-                            <p class="price">39,000</p>
-                            <p class="flag best">BEST</p>
-                        </div>
-                        <div class="hover-screen">
-                            <a class="buy-btn" href="#!">바로구매</a>
-                            <div class="icon">
-                                <a class="cart" href="#!">
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="/public/images/1591944934738.webp" alt="">
+                                <div class="labels">
+                                    <div class="best">best</div>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <div class="tags">#수분선앰플</div>
+                                <h3>솔라바이옴™앰플 특별 기획세트</h3>
+                                <div class="price">
+                                    <div class="origin-price"></div>
+                                    <strong>56,000원</strong>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <a href="#!" class="buy">
+                                    바로구매
+                                    <span class="icon-plus"></span>
+                                    <span class="slide-plus">
+                                        <span class="screen"></span>
+                                    </span>
+                                </a>
+                                <a href="#!" class="cart">
                                     <img src="/public/images/btn_cart.webp" alt="">
                                 </a>
-                                <a href="#!">
+                                <a href="#!" class="favorite">
                                     <img src="/public/images/btn_wish.webp" alt="">
                                 </a>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <div class="product-item tag">
-                            <img src="/public/images/1587723450681.webp" alt="">
-                            <p class="tag">#수분선앰플</p>
-                            <p class="list-tit">솔라바이옴™앰플 특별 기획세트</p>
-                            <p class="price">39,000</p>
-                            <p class="flag new">NEW</p>
-                            <p class="flag best">BEST</p>
-                            <p class="flag gift">GIFT</p>
-                            <p class="flag sale">SALE</p>
-                        </div>
-                        <div class="hover-screen">
-                            <a class="buy-btn" href="#!">바로구매</a>
-                            <div class="icon">
-                                <a class="cart" href="#!">
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="/public/images/1587020955660.webp" alt="">
+                                <div class="labels">
+                                    <div class="best">best</div>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <div class="tags">#프라이머선크림</div>
+                                <h3>솔라바이옴™프라이머 특별기획세트</h3>
+                                <div class="price">
+                                    <div class="origin-price"></div>
+                                    <strong>29,000원</strong>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <a href="#!" class="buy">
+                                    바로구매
+                                    <span class="icon-plus"></span>
+                                    <span class="slide-plus">
+                                        <span class="screen"></span>
+                                    </span>
+                                </a>
+                                <a href="#!" class="cart">
                                     <img src="/public/images/btn_cart.webp" alt="">
                                 </a>
-                                <a href="#!">
+                                <a href="#!" class="favorite">
                                     <img src="/public/images/btn_wish.webp" alt="">
                                 </a>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <div class="product-item">
-                            <img src="/public/images/1587020955660.webp" alt="">
-                            <p class="tag">#수분선앰플</p>
-                            <p class="list-tit">솔라바이옴™앰플 특별 기획세트</p>
-                            <p class="price">39,000</p>
-                            <p class="flag best">BEST</p>
-                        </div>
-                        <div class="hover-screen">
-                            <a class="buy-btn" href="#!">바로구매</a>
-                            <div class="icon">
-                                <a class="cart" href="#!">
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="/public/images/1587723450681.webp" alt="">
+                                <div class="labels">
+                                    <div class="new">new</div>
+                                    <div class="best">best</div>
+                                    <div class="gift">gift</div>
+                                    <div class="sale">sale</div>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <div class="tags">#시카베스트세트</div>
+                                <h3>시카페어 취향저격 세트</h3>
+                                <div class="price sale">
+                                    <div class="origin-price">87,000원</div>
+                                    <strong>73,950원</strong>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <a href="#!" class="buy">
+                                    바로구매
+                                    <span class="icon-plus"></span>
+                                    <span class="slide-plus">
+                                        <span class="screen"></span>
+                                    </span>
+                                </a>
+                                <a href="#!" class="cart">
                                     <img src="/public/images/btn_cart.webp" alt="">
                                 </a>
-                                <a href="#!">
+                                <a href="#!" class="favorite">
                                     <img src="/public/images/btn_wish.webp" alt="">
                                 </a>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <div class="product-item">
-                            <img src="/public/images/1589418738580.webp" alt="">
-                            <p class="tag">#수분선앰플</p>
-                            <p class="list-tit">솔라바이옴™앰플 특별 기획세트</p>
-                            <p class="price">39,000</p>
-                            <p class="flag best">BEST</p>
-                        </div>
-                        <div class="hover-screen">
-                            <a class="buy-btn" href="#!">바로구매</a>
-                            <div class="icon">
-                                <a class="cart" href="#!">
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="/public/images/1591672265339.webp" alt="">
+                                <div class="labels">
+                                    <div class="best">best</div>
+                                    <div class="gift">gift</div>
+                                    <div class="sale">sale</div>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <div class="tags">#233억에센스+톤업샷</div>
+                                <h3>바이옴 에센스&블루 샷</h3>
+                                <div class="price sale">
+                                    <div class="origin-price">42,000원</div>
+                                    <strong>35,700원</strong>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <a href="#!" class="buy">
+                                    바로구매
+                                    <span class="icon-plus"></span>
+                                    <span class="slide-plus">
+                                        <span class="screen"></span>
+                                    </span>
+                                </a>
+                                <a href="#!" class="cart">
                                     <img src="/public/images/btn_cart.webp" alt="">
                                 </a>
-                                <a href="#!">
+                                <a href="#!" class="favorite">
                                     <img src="/public/images/btn_wish.webp" alt="">
                                 </a>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <div class="product-item tag">
-                            <img src="/public/images/1591672265339.webp" alt="">
-                            <p class="tag">#수분선앰플</p>
-                            <p class="list-tit">솔라바이옴™앰플 특별 기획세트</p>
-                            <p class="price">39,000</p>
-                            <p class="flag best">BEST</p>
-                            <p class="flag best">BEST</p>
-                            <p class="flag gift">GIFT</p>
-                            <p class="flag sale">SALE</p>
-                        </div>
-                        <div class="hover-screen">
-                            <a class="buy-btn" href="#!">바로구매</a>
-                            <div class="icon">
-                                <a class="cart" href="#!">
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="/public/images/1589418738580.webp" alt="">
+                                <div class="labels">
+                                    <div class="best">best</div>
+                                    <div class="sale">sale</div>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <div class="tags">#수분선앰플</div>
+                                <h3>솔라바이옴™앰플 특별 기획세트</h3>
+                                <div class="price sale">
+                                    <div class="origin-price">22,000원</div>
+                                    <strong>20,900원</strong>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <a href="#!" class="buy">
+                                    바로구매
+                                    <span class="icon-plus"></span>
+                                    <span class="slide-plus">
+                                        <span class="screen"></span>
+                                    </span>
+                                </a>
+                                <a href="#!" class="cart">
                                     <img src="/public/images/btn_cart.webp" alt="">
                                 </a>
-                                <a href="#!">
+                                <a href="#!" class="favorite">
                                     <img src="/public/images/btn_wish.webp" alt="">
                                 </a>
                             </div>
@@ -155,14 +248,17 @@
                 </ul>
             </div>
         </section>
+
+
         <section class="product-slide">
             <div class="item img1">
                 <div class="container">
                     <div class="product-desc">
                         <h2>Only Drjart.com<br>Membership Chance</h2>
                         <p>닥터자르트 멤버십만 받을 수 있는 특별 구매 금액대별 사은품</p>
-                        <div class="product-btn">
+                        <div class="slide-btn">
                             <a href="#!">자세히보기</a>
+                            <div class="screen"></div>
                         </div>
                     </div>
                 </div>
@@ -172,118 +268,177 @@
                     <div class="product-desc">
                         <h2>소중한 고객님의<br>생일을 축하드립니다.</h2>
                         <p>6월 생일이신 프리미엄 등급 고객님께 바이옴 집중 키트를 드립니다.</p>
-                        <div class="product-btn">
+                        <div class="slide-btn">
                             <a href="#!">자세히보기</a>
+                            <div class="screen"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+
         <section class="product-items benefit">
             <div class="container">
-                <h3>온라인 혜택제품</h3>
-                <ul class="product-item-list">
+                <h2>온라인 혜택제품</h2>
+                <ul>
                     <li>
-                        <div class="product-item">
-                            <img src="/public/images/1591944934738.webp" alt="">
-                            <p class="tag">#수분선앰플</p>
-                            <p class="list-tit">솔라바이옴™앰플 특별 기획세트</p>
-                            <p class="price">39,000</p>
-                            <p class="flag best">BEST</p>
-                        </div>
-                        <div class="hover-screen">
-                            <a class="buy-btn" href="#!">바로구매</a>
-                            <div class="icon">
-                                <a class="cart" href="#!">
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="/public/images/1589852789984.webp" alt="">
+                                <div class="labels">
+                                    <div class="new">new</div>
+                                    <div class="sale">sale</div>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <div class="tags">
+                                    #시카리페어세럼
+                                </div>
+                                <h3>2세대 시카페어 세럼</h3>
+                                <div class="price sale">
+                                    <div class="origin-price">37,050원</div>
+                                    <stron>39,000원</stron>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <a class="buy">바로가기
+                                    <span class="icon-plus"></span>
+                                    <span class="slide-plus">
+                                        <span class="screen"></span>
+                                    </span>
+                                </a>
+                                <a href="#!" class="cart">
                                     <img src="/public/images/btn_cart.webp" alt="">
                                 </a>
-                                <a href="#!">
+                                <a href="#!" class="favorite">
                                     <img src="/public/images/btn_wish.webp" alt="">
                                 </a>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <div class="product-item tag">
-                            <img src="/public/images/1587723450681.webp" alt="">
-                            <p class="tag">#수분선앰플</p>
-                            <p class="list-tit">솔라바이옴™앰플 특별 기획세트</p>
-                            <p class="price">39,000</p>
-                            <p class="flag new">NEW</p>
-                            <p class="flag best">BEST</p>
-                            <p class="flag gift">GIFT</p>
-                            <p class="flag sale">SALE</p>
-                        </div>
-                        <div class="hover-screen">
-                            <a class="buy-btn" href="#!">바로구매</a>
-                            <div class="icon">
-                                <a class="cart" href="#!">
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="/public/images/1590393773811.webp" alt="">
+                                <div class="labels">
+                                    <div class="sale">sale</div>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <div class="tags">
+                                    #시카리페어세럼
+                                </div>
+                                <h3>2세대 시카페어 세럼</h3>
+                                <div class="price sale">
+                                    <div class="origin-price">37,050원</div>
+                                    <stron>39,000원</stron>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <a class="buy">바로가기
+                                    <span class="icon-plus"></span>
+                                    <span class="slide-plus">
+                                        <span class="screen"></span>
+                                    </span>
+                                </a>
+                                <a href="#!" class="cart">
                                     <img src="/public/images/btn_cart.webp" alt="">
                                 </a>
-                                <a href="#!">
+                                <a href="#!" class="favorite">
                                     <img src="/public/images/btn_wish.webp" alt="">
                                 </a>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <div class="product-item">
-                            <img src="/public/images/1587020955660.webp" alt="">
-                            <p class="tag">#수분선앰플</p>
-                            <p class="list-tit">솔라바이옴™앰플 특별 기획세트</p>
-                            <p class="price">39,000</p>
-                            <p class="flag best">BEST</p>
-                        </div>
-                        <div class="hover-screen">
-                            <a class="buy-btn" href="#!">바로구매</a>
-                            <div class="icon">
-                                <a class="cart" href="#!">
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="/public/images/1587022010571.webp" alt="">
+                            </div>
+                            <div class="description">
+                                <div class="tags">
+                                    #시카리페어세럼
+                                </div>
+                                <h3>2세대 시카페어 세럼</h3>
+                                <div class="price">
+                                    <div class="origin-price">37,050원</div>
+                                    <stron>39,000원</stron>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <a class="buy">바로가기
+                                    <span class="icon-plus"></span>
+                                    <span class="slide-plus">
+                                        <span class="screen"></span>
+                                    </span>
+                                </a>
+                                <a href="#!" class="cart">
                                     <img src="/public/images/btn_cart.webp" alt="">
                                 </a>
-                                <a href="#!">
+                                <a href="#!" class="favorite">
                                     <img src="/public/images/btn_wish.webp" alt="">
                                 </a>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <div class="product-item">
-                            <img src="/public/images/1589418738580.webp" alt="">
-                            <p class="tag">#수분선앰플</p>
-                            <p class="list-tit">솔라바이옴™앰플 특별 기획세트</p>
-                            <p class="price">39,000</p>
-                            <p class="flag best">BEST</p>
-                        </div>
-                        <div class="hover-screen">
-                            <a class="buy-btn" href="#!">바로구매</a>
-                            <div class="icon">
-                                <a class="cart" href="#!">
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="/public/images/1587020955660.webp" alt="">
+                            </div>
+                            <div class="description">
+                                <div class="tags">
+                                    #시카리페어세럼
+                                </div>
+                                <h3>2세대 시카페어 세럼</h3>
+                                <div class="price">
+                                    <div class="origin-price">37,050원</div>
+                                    <stron>39,000원</stron>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <a class="buy">바로가기
+                                    <span class="icon-plus"></span>
+                                    <span class="slide-plus">
+                                        <span class="screen"></span>
+                                    </span>
+                                </a>
+                                <a href="#!" class="cart">
                                     <img src="/public/images/btn_cart.webp" alt="">
                                 </a>
-                                <a href="#!">
+                                <a href="#!" class="favorite">
                                     <img src="/public/images/btn_wish.webp" alt="">
                                 </a>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <div class="product-item tag">
-                            <img src="/public/images/1591672265339.webp" alt="">
-                            <p class="tag">#수분선앰플</p>
-                            <p class="list-tit">솔라바이옴™앰플 특별 기획세트</p>
-                            <p class="price">39,000</p>
-                            <p class="flag best">BEST</p>
-                            <p class="flag best">BEST</p>
-                            <p class="flag gift">GIFT</p>
-                            <p class="flag sale">SALE</p>
-                        </div>
-                        <div class="hover-screen">
-                            <a class="buy-btn" href="#!">바로구매</a>
-                            <div class="icon">
-                                <a class="cart" href="#!">
+                        <div class="item">
+                            <div class="thumb">
+                                <img src="/public/images/1592787759309.webp" alt="">
+                            </div>
+                            <div class="description">
+                                <div class="tags">
+                                    #시카리페어세럼
+                                </div>
+                                <h3>2세대 시카페어 세럼</h3>
+                                <div class="price sale">
+                                    <div class="origin-price">37,050원</div>
+                                    <stron>39,000원</stron>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <a class="buy">바로가기
+                                    <span class="icon-plus"></span>
+                                    <span class="slide-plus">
+                                        <span class="screen"></span>
+                                    </span>
+                                </a>
+                                <a href="#!" class="cart">
                                     <img src="/public/images/btn_cart.webp" alt="">
                                 </a>
-                                <a href="#!">
+                                <a href="#!" class="favorite">
                                     <img src="/public/images/btn_wish.webp" alt="">
                                 </a>
                             </div>
@@ -292,196 +447,311 @@
                 </ul>
             </div>
         </section>
+
+
         <section class="product-story">
             <div class="container">
-                <div class="story-main">
-                    <div class="story-desc">
-                        <p class="story-tit">NEW PRODUCT STORY</p>
-                        <p class="story-sub-tit">태양에 맞서는<br>강력한 차단의 힘</p>
-                        <p class="story-sub">지구의 솔라스트레스에 맞서는<br>#우주선크림 솔라바이옴의<br>강력한 피부보호막을 경험해보세요.</p>
+                <div class="main">
+                    <div class="desc">
+                        <p class="tit">NEW PRODUCT STORY</p>
+                        <p class="sub-tit">태양에 맞서는<br>강력한 차단의 힘</p>
+                        <p class="sub">지구의 솔라스트레스에 맞서는<br>#우주선크림 솔라바이옴의<br>강력한 피부보호막을 경험해보세요.</p>
                         <a href="#!">자세히 보기</a>
                     </div>
-                    <div class="story-main-cover">
-                        <img src="/public/images/1585722443572.webp" alt="">
+                    <div class="cover">
                         <div class="play">
                             <img src="/public/images/btn_vodPlay.png" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="story-side">
-                    <p class="tit">Today Pick's</p>
-                    <p>닥터자르트가 추천하는 상품입니다.</p>
-                    <div class="story-slide">
-                        <div class="story-slide-item">
-                            <img src="/public/images/1591944934738.webp" alt="">
-                            <p class="tag">#수분선앰플</p>
-                            <p class="list-tit">솔라바이옴™앰플 특별 기획세트</p>
-                            <p class="price">39,000</p>
-                            <p class="flag best">BEST</p>
-                            <div class="buy-icon">
-                                <a class="buy-btn" href="#!">바로구매</a>
-                                <div class="icon">
-                                    <a class="cart" href="#!"><img src="/public/images/btn_cart.webp" alt=""></a>
-                                    <a href="#!"><img src="/public/images/btn_wish.webp" alt=""></a>
+                <div class="side">
+                    <div class="slide-container">
+                        <p class="tit">Today Pick's</p>
+                        <p>닥터자르트가 추천하는 상품입니다.</p>
+                    </div>
+                    <div class="slide-container">
+                        <div class="story-slide">
+                            <div class="item">
+                                <div class="thumb">
+                                    <img src="/public/images/1589418738580.webp" alt="">
+                                    <div class="labels">
+                                        <div class="new">new</div>
+                                        <div class="best">best</div>
+                                        <div class="sale">sale</div>
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <div class="tags">
+                                        #시카리페어세럼
+                                    </div>
+                                    <h3>2세대 시카페어 세럼</h3>
+                                    <div class="price sale">
+                                        <div class="origin-price">37,050원</div>
+                                        <stron>39,000원</stron>
+                                    </div>
+                                </div>
+                                <div class="buttons">
+                                    <a class="buy">바로가기
+                                        <span class="icon-plus"></span>
+                                        <span class="slide-plus">
+                                        <span class="screen"></span>
+                                    </span>
+                                    </a>
+                                    <a href="#!" class="cart">
+                                        <img src="/public/images/btn_cart.webp" alt="">
+                                    </a>
+                                    <a href="#!" class="favorite">
+                                        <img src="/public/images/btn_wish.webp" alt="">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="thumb">
+                                    <img src="/public/images/1591944934738.webp" alt="">
+                                    <div class="labels">
+                                        <div class="new">new</div>
+                                        <div class="sale">sale</div>
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <div class="tags">
+                                        #시카리페어세럼
+                                    </div>
+                                    <h3>2세대 시카페어 세럼</h3>
+                                    <div class="price sale">
+                                        <div class="origin-price">37,050원</div>
+                                        <stron>39,000원</stron>
+                                    </div>
+                                </div>
+                                <div class="buttons">
+                                    <a class="buy">바로가기
+                                        <span class="icon-plus"></span>
+                                        <span class="slide-plus">
+                                        <span class="screen"></span>
+                                    </span>
+                                    </a>
+                                    <a href="#!" class="cart">
+                                        <img src="/public/images/btn_cart.webp" alt="">
+                                    </a>
+                                    <a href="#!" class="favorite">
+                                        <img src="/public/images/btn_wish.webp" alt="">
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="story-slide-item">
-                            <img src="/public/images/1591944934738.webp" alt="">
-                            <p class="tag">#수분선앰플</p>
-                            <p class="list-tit">솔라바이옴™앰플 특별 기획세트</p>
-                            <p class="price">39,000</p>
-                            <p class="flag best">BEST</p>
-                            <div class="buy-icon">
-                                <a class="buy-btn" href="#!">바로구매</a>
-                                <div class="icon">
-                                    <a class="cart" href="#!"><img src="/public/images/btn_cart.webp" alt=""></a>
-                                    <a href="#!"><img src="/public/images/btn_wish.webp" alt=""></a>
-                                </div>
-                            </div>
+                        <div class="slick-arrow slick-prev">
+                            <img src="/public/images/arr_pageprev.webp" alt="">
+                        </div>
+                        <div class="slick-arrow slick-next">
+                            <img src="/public/images/arr_pagenext.webp" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+
         <section class="product-review">
             <div class="container">
                 <h3>베스트 포토리뷰</h3>
                 <p class="sub-title">고객님들께서 제품 사용 후 남겨주신 베스트 리뷰를 확인하세요</p>
-                <ul class="review-items">
+                <ul>
                     <li>
-                        <div class="review-item">
+                        <div class="item">
                             <img src="/public/images/portrait_6cc436ff33575787.jpg" alt="">
                             <p class="review-text">역시 믿고 사는 닥터자르트 여러가지 삿더니</p>
-                            <div class="text">
+                            <div class="info">
                                 <p class="id">leehana****</p>
                                 <p class="date">2020.05.01</p>
                             </div>
+                            <a href="#!">
+                                <div class="thumb">
+                                    <img src="/public/images/extra_small_786a32a8ffa421bf.jpg" alt="">
+                                    <p>티트리먼트™ 대용량 2종세트</p>
+                                </div>
+                            </a>
                         </div>
                     </li>
                     <li>
-                        <div class="review-item">
+                        <div class="item">
                             <img src="/public/images/portrait_586a0c5854d0ab1c.jpg" alt="">
                             <p class="review-text">역시 믿고 사는 닥터자르트 여러가지 삿더니</p>
-                            <div class="text">
+                            <div class="info">
                                 <p class="id">leehana****</p>
                                 <p class="date">2020.05.01</p>
                             </div>
+                            <a href="#!">
+                                <div class="thumb">
+                                    <img src="/public/images/extra_small_757714afdeb9bb58.jpg" alt="">
+                                    <p>티트리먼트™ 대용량 2종세트</p>
+                                </div>
+                            </a>
                         </div>
                     </li>
                     <li>
-                        <div class="review-item">
-                            <img src="/public/images/portrait_c8bc22ee908bda15.jpg" alt="">
-                            <p class="review-text">역시 믿고 사는 닥터자르트 여러가지 삿더니</p>
-                            <div class="text">
-                                <p class="id">leehana****</p>
-                                <p class="date">2020.05.01</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="review-item">
+                        <div class="item">
                             <img src="/public/images/portrait_43138bb60c347b1d.jpg" alt="">
                             <p class="review-text">역시 믿고 사는 닥터자르트 여러가지 삿더니</p>
-                            <div class="text">
+                            <div class="info">
                                 <p class="id">leehana****</p>
                                 <p class="date">2020.05.01</p>
                             </div>
+                            <a href="#!">
+                                <div class="thumb">
+                                    <img src="/public/images/extra_small_786a32a8ffa421bf.jpg" alt="">
+                                    <p>티트리먼트™ 대용량 2종세트</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <img src="/public/images/portrait_c8bc22ee908bda15.jpg" alt="">
+                            <p class="review-text">역시 믿고 사는 닥터자르트 여러가지 삿더니</p>
+                            <div class="info">
+                                <p class="id">leehana****</p>
+                                <p class="date">2020.05.01</p>
+                            </div>
+                            <a href="#!">
+                                <div class="thumb">
+                                    <img src="/public/images/extra_small_3020f461167a5b3d.jpg" alt="">
+                                    <p>티트리먼트™ 대용량 2종세트</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <img src="/public/images/portrait_6cc436ff33575787.jpg" alt="">
+                            <p class="review-text">역시 믿고 사는 닥터자르트 여러가지 삿더니</p>
+                            <div class="info">
+                                <p class="id">leehana****</p>
+                                <p class="date">2020.05.01</p>
+                            </div>
+                            <a href="#!">
+                                <div class="thumb">
+                                    <img src="/public/images/extra_small_757714afdeb9bb58.jpg" alt="">
+                                    <p>티트리먼트™ 대용량 2종세트</p>
+                                </div>
+                            </a>
                         </div>
                     </li>
                 </ul>
             </div>
         </section>
+
+
         <section class="product-sns">
             <div class="container">
                 <h3>Dr.Jart+ Instagram</h3>
-                <ul class="insta-item">
+                <ul>
                     <li>
                         <div class="item">
-                            <img src="/public/images/81864479_181989113262504_350999637245898900_n.jpg" alt="">
-                            <div class="screen">
-                                <i class="fa fa-heart"></i>
-                                285
+                            <div class="thumb">
+                                <img src="/public/images/103966358_3455607957793129_778831864984321935_n.jpg" alt="">
+                                <div class="screen">
+                                    <i class="fa fa-heart"> 285</i>
+                                    <i class="fa fa-comment"> 5</i>
+                                </div>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="item">
-                            <img src="/public/images/102519745_301533840869075_965514985259954033_n.jpg" alt="">
-                            <div class="screen">
-                                <i class="fa fa-heart"></i>
-                                285
+                            <div class="thumb">
+                                <img src="/public/images/103501386_318213935865223_4944325539895391752_n.jpg" alt="">
+                                <div class="screen">
+                                    <i class="fa fa-heart"> 285</i>
+                                    <i class="fa fa-comment"> 5</i>
+                                </div>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="item">
-                            <img src="/public/images/102642599_281025192948918_1002890151861307271_n.jpg" alt="">
-                            <div class="screen">
-                                <i class="fa fa-heart"></i>
-                                285
+                            <div class="thumb">
+                                <img src="/public/images/103079366_161244718797830_3547849881976161527_n.jpg" alt="">
+                                <div class="screen">
+                                    <i class="fa fa-heart"> 285</i>
+                                    <i class="fa fa-comment"> 5</i>
+                                </div>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="item">
-                            <img src="/public/images/103048764_3177302782330469_5216638427963327057_n.jpg" alt="">
-                            <div class="screen">
-                                <i class="fa fa-heart"></i>
-                                285
+                            <div class="thumb">
+                                <img src="/public/images/103048764_3177302782330469_5216638427963327057_n.jpg" alt="">
+                                <div class="screen">
+                                    <i class="fa fa-heart"> 285</i>
+                                    <i class="fa fa-comment"> 5</i>
+                                </div>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="item">
-                            <img src="/public/images/103079366_161244718797830_3547849881976161527_n.jpg" alt="">
-                            <div class="screen">
-                                <i class="fa fa-heart"></i>
-                                285
+                            <div class="thumb">
+                                <img src="/public/images/102519745_301533840869075_965514985259954033_n.jpg" alt="">
+                                <div class="screen">
+                                    <i class="fa fa-heart"> 285</i>
+                                    <i class="fa fa-comment"> 5</i>
+                                </div>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="item">
-                            <img src="/public/images/103966358_3455607957793129_778831864984321935_n.jpg" alt="">
-                            <div class="screen">
-                                <i class="fa fa-heart"></i>
-                                285
+                            <div class="thumb">
+                                <img src="/public/images/102642599_281025192948918_1002890151861307271_n.jpg" alt="">
+                                <div class="screen">
+                                    <i class="fa fa-heart"> 285</i>
+                                    <i class="fa fa-comment"> 5</i>
+                                </div>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="item">
-                            <img src="/public/images/83353564_935275426943580_5917327587220165666_n.jpg" alt="">
-                            <div class="screen">
-                                <i class="fa fa-heart"></i>
-                                285
+                            <div class="thumb">
+                                <img src="/public/images/102519745_301533840869075_965514985259954033_n.jpg" alt="">
+                                <div class="screen">
+                                    <i class="fa fa-heart"> 285</i>
+                                    <i class="fa fa-comment"> 5</i>
+                                </div>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="item">
-                            <img src="/public/images/103501386_318213935865223_4944325539895391752_n.jpg" alt="">
-                            <div class="screen">
-                                <i class="fa fa-heart"></i>
-                                285
+                            <div class="thumb">
+                                <img src="/public/images/101669546_1184043288597813_8327322792923767321_n.jpg" alt="">
+                                <div class="screen">
+                                    <i class="fa fa-heart"> 285</i>
+                                    <i class="fa fa-comment"> 5</i>
+                                </div>
                             </div>
                         </div>
                     </li><li>
                         <div class="item">
-                            <img src="/public/images/83353564_935275426943580_5917327587220165666_n.jpg" alt="">
-                            <div class="screen">
-                                <i class="fa fa-heart"></i>
-                                285
+                            <div class="thumb">
+                                <img src="/public/images/101667965_1169746920052175_8868162078658604422_n.jpg" alt="">
+                                <div class="screen">
+                                    <i class="fa fa-heart"> 285</i>
+                                    <i class="fa fa-comment"> 5</i>
+                                </div>
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="item">
-                            <img src="/public/images/83353564_935275426943580_5917327587220165666_n.jpg" alt="">
-                            <div class="screen">
-                                <i class="fa fa-heart"></i>
-                                285
+                            <div class="thumb">
+                                <img src="/public/images/83353564_935275426943580_5917327587220165666_n.jpg" alt="">
+                                <div class="screen">
+                                    <i class="fa fa-heart"> 285</i>
+                                    <i class="fa fa-comment"> 5</i>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -489,7 +759,6 @@
             </div>
         </section>
     </div>
-
     <%- include ../components/footer %>
 </div>
 </body>

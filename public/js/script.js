@@ -17,7 +17,10 @@ var drjart = {
             arrows: false,
         });
 
-        $('.story-slide').slick();
+        $('.story-slide').slick({
+            prevArrow: $('.slick-prev'),
+            nextArrow: $('.slick-next'),
+        });
     },
 
     handleSideMenu: function () {

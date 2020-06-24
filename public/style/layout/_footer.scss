@@ -1,17 +1,21 @@
 #footer {
-  .container {
-
-  }
   .footer-menu {
+    height: 60px;
     background-color: #fff;
-    display: flex;
-    a {
-      height: 60px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 13px;
-      padding: 20px;
+    .container {
+      a {
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+        padding-left: 20px;
+        color: #999;
+        &.em {
+          color: #000;
+        }
+      }
     }
+
   }
 }

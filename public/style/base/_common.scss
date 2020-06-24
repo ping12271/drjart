@@ -5,11 +5,13 @@ body {
     word-break: keep-all;
 }
 
+#main {
+    min-width: 1280px;
+    padding-left: 90px;
+}
 .container {
-    max-width: 1500px;
     margin: 0 auto;
     padding: 0 60px;
-
 }
 
 
