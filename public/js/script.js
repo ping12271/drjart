@@ -5,10 +5,11 @@ var drjart = {
     init: function () {
         drjart.slider();
         drjart.handleSideMenu();
+        drjart.fullPage();
     },
 
     slider: function () {
-        $('.visual, .product-slide').slick({
+        $('.visual, .product-slide, .main-slide').slick({
             autoplay: true,
             dots: true,
             infinite: true,
@@ -27,7 +28,22 @@ var drjart = {
         $('.all-menu').on('click', function () {
             $('html').toggleClass('open-side-menu');
         })
+    },
 
+    fullPage: function () {
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                //options here
+                navigation: true,
+                navigationPosition: 'right',
+                autoScrolling: true,
+                scrollHorizontally: true,
+                anchors:['main-slide', 'project', 'movie', 'event']
+            });
+
+            //methods
+            $.fn.fullpage.setAllowScrolling(false);
+        });
     }
 
 };
