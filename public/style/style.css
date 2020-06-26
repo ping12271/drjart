@@ -1201,10 +1201,22 @@ body {
   background-image: url("/public/images/1592871071033.webp");
 }
 #fullpage .main-slide .item.img2 {
-  background-image: url("/public/images/1591931914157.webp");
+  background-image: url("/public/images/1591678426951.webp");
 }
 #fullpage .main-slide .item.img3 {
+  background-image: url("/public/images/1591931914157.webp");
+}
+#fullpage .main-slide .item.img4 {
   background-image: url("/public/images/1592437221751.webp");
+}
+#fullpage .main-slide .item.img5 {
+  background-image: url("/public/images/1591780771253.webp");
+}
+#fullpage .main-slide .item.img6 {
+  background-image: url("/public/images/1592301248099.webp");
+}
+#fullpage .main-slide .item.img7 {
+  background-image: url("/public/images/1592266183185.webp");
 }
 #fullpage .main-slide .item .description {
   height: 100vh;
@@ -1214,13 +1226,17 @@ body {
   align-items: flex-start;
 }
 #fullpage .main-slide .item .description h1 {
-  font-size: 40px;
+  font-size: 48px;
   line-height: 1.5;
+  font-weight: 600;
 }
 #fullpage .main-slide .item .description p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   margin-top: 16px;
+}
+#fullpage .main-slide .item .description .slide-btn {
+  font-size: 16px;
 }
 #fullpage .project .item {
   height: 100vh;
