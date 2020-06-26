@@ -7,11 +7,9 @@
     z-index: 100;
     background-color: #fff;
     border-right: 1px solid #d5d3d3;
-
     .open-side-menu & {
       border: none;
     }
-
     .header-btn {
       position: relative;
       height: 100%;
@@ -20,27 +18,23 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-
       .plus {
         margin-top: 30px;
         display: flex;
         width: 28px;
         height: 28px;
         position: relative;
-
         &:before, &:after {
           content: '';
           position: absolute;
           background-color: black;
         }
-
         &:before {
           left: 50%;
           width: 30%;
           margin-left: -15%;
           height: 100%;
         }
-
         &:after {
           top: 50%;
           height: 30%;
@@ -48,28 +42,22 @@
           width: 100%;
         }
       }
-
       .all-menu {
         font-size: 30px;
-
         .fa-bars {
           .open-side-menu & {
             display: none;
           }
         }
-
         .fa-times {
           display: none;
-
           .open-side-menu & {
             display: block;
           }
         }
       }
-
       .icons {
         margin-bottom: 30px;
-
         a {
           display: flex;
           width: 29px;

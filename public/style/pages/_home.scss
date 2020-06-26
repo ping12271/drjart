@@ -23,7 +23,6 @@
 
   .main-slide {
     .item {
-      height: 100vh;
       background-position: center;
       background-size: cover;
       &.img1 {
@@ -71,7 +70,6 @@
   }
   .project {
     .item {
-      height: 100vh;
       background-position: center;
       background-size: cover;
       &.img1 {
@@ -244,6 +242,7 @@
               color: #222;
               font-size: 16px;
               margin-top: 8px;
+              line-height: 1.2;
             }
           }
         }

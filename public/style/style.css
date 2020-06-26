@@ -1193,7 +1193,6 @@ body {
   color: #222;
 }
 #fullpage .main-slide .item {
-  height: 100vh;
   background-position: center;
   background-size: cover;
 }
@@ -1239,7 +1238,6 @@ body {
   font-size: 16px;
 }
 #fullpage .project .item {
-  height: 100vh;
   background-position: center;
   background-size: cover;
 }
@@ -1399,6 +1397,7 @@ body {
   color: #222;
   font-size: 16px;
   margin-top: 8px;
+  line-height: 1.2;
 }
 
 .product-page {

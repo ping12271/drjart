@@ -28,6 +28,9 @@ var drjart = {
         $('.all-menu').on('click', function () {
             $('html').toggleClass('open-side-menu');
         })
+        $('.side-nav .screen').on('click', function () {
+            $('html').removeClass('open-side-menu')
+        })
     },
 
     fullPage: function () {
