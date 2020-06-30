@@ -1304,7 +1304,6 @@ body {
   left: 0;
   top: -30px;
   background-color: rgba(255, 255, 255, 0.8);
-  display: flex;
 }
 .labels > div {
   width: 44px;
@@ -1316,7 +1315,7 @@ body {
   text-transform: uppercase;
 }
 .labels > div + div {
-  margin-left: 4px;
+  margin-top: 4px;
 }
 .labels > div.new, .labels > div.best {
   border: 1px solid #000;
@@ -2187,6 +2186,13 @@ body {
   position: relative;
   margin-top: 100px;
 }
+.product-detail-visual .description .title .labels {
+  display: flex;
+}
+.product-detail-visual .description .title .labels > div + div {
+  margin-top: 0;
+  margin-left: 4px;
+}
 .product-detail-visual .description .title h1 {
   font-size: 30px;
   line-height: 38px;
@@ -2684,8 +2690,8 @@ body {
 }
 .product-detail-review .board .item .main .score .labels {
   position: relative;
-  top: 2px;
   left: 10px;
+  top: 0;
 }
 .product-detail-review .board .item .main .type {
   width: 650px;
