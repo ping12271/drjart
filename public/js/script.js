@@ -116,6 +116,7 @@ var drjart = {
     renderProductBest: function () {
         const products = [
             {
+                a: "/product/detail",
                 image: "/public/images/1560475092450.webp",
                 tags: "#탱글수분크림",
                 productName: "바이탈 하이드라 솔루션 바이옴 워터 크림",
@@ -170,7 +171,7 @@ var drjart = {
         const productsDom = products.map(function (item) {
             return `
                 <li>
-                        <div class="item">
+                        <a href="${item.a}" class="item">
                             <div class="thumb">
                                 <img src=${item.image} alt="">
                                 <div class="labels">
@@ -202,7 +203,7 @@ var drjart = {
                                     <img src="/public/images/btn_wish.webp" alt="">
                                 </a>
                             </div>
-                        </div>
+                        </a>
                 </li>
             `
         })

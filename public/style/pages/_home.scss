@@ -184,14 +184,16 @@
       li {
         flex: 1 1 25%;
         padding: 10px;
+      }
         .item {
-          &:hover {
-            .description {
-              opacity: .4;
-            }
-          }
           .thumb {
             position: relative;
+            width: 267px;
+            height: 364px;
+            overflow: hidden;
+            img {
+              transition: .6s;
+            }
             .screen {
               position: absolute;
               top: 0;
@@ -211,9 +213,11 @@
                 opacity: 0;
                 transition: 0.6s;
               }
-
             }
             &:hover {
+              img {
+                transform: scale(1.2);
+              }
               .screen {
                 opacity: 1;
                 &::before {
@@ -229,7 +233,6 @@
                   opacity: 1;
                 }
               }
-
             }
           }
           .description {
@@ -246,7 +249,7 @@
             }
           }
         }
-      }
+
     }
   }
 }
